@@ -159,17 +159,7 @@ st.pyplot(fig2)
 
 
 
-start1 = '2021-08-01'
-end1 = '2021-11-01'
-df1 = data.DataReader(user_input, 'yahoo', start1, end1)
-df1=df1.reset_index()
-st.subheader("FUTURE PREDICTIONS FOR NEXT 60 DAYS")
-st.write(f"{name}")
-fig5 = plt.figure(figsize = (12,6))
-plt.xlabel('Time')
-plt.ylabel('Price')
-plt.plot(df1.Close)
-st.pyplot(fig5)
+
 
 
 
